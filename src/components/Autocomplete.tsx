@@ -69,7 +69,7 @@ export const Autocomplete: React.FC<Props> = ({
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [query, people, delay, prevQuery]);
+  }, [query, people, delay]);
 
   const hasSuggestions = filtered.length > 0;
 
